@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Webpage</title>
+    <style>
+        /* Modern CSS reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            color: #7f8c8d;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .button.cv {
+            background-color: #27ae60;
+        }
+
+        .button.cv:hover {
+            background-color: #219a52;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lam Ting Wai, Ivan</h1>
+        <p>University: The Chinese University of Hong Kong</p>
+        <p>Major: Computer Science</p>
+        <p>Email: lamtingwaiivan@gmail.com</p> <!-- Add more profile details as needed -->
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ting-wai-lam-458298311/" class="button">LinkedIn Profile</a>
+            <a href="Lam_Ting_Wai_CV.pdf" class="button cv">Download CV</a>
+        </div>
+    </div>
+</body>
+</html>
